@@ -6,22 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83386a90-c880-437c-b0b4-a9bec6b938cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.COLDefence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.COLDefence/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/COLDefenceInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/COLDefenceInstance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/DefenceBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/DefenceBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/DefenceBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/DefenceBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/DefenceController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/DefenceController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/DropPodBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/DropPodBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/DropPodBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/DropPodBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/EnemyBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/EnemyBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/EnemyController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/EnemyController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/GASAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/GASAbility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/GASAttribute.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/GASAttribute.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/GASComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/GASComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/GeneralCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/GeneralCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/GeneralCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/GeneralCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/NukeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/NukeBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/ProjectileBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/ProjectileBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/COLDefence/WaveManagerBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/COLDefence/WaveManagerBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +69,6 @@
         <option value="$PROJECT_DIR$/Source/COLDefence/EnemyController.cpp" />
         <option value="$PROJECT_DIR$/Source/COLDefence/ProjectileBase.cpp" />
         <option value="$PROJECT_DIR$/Source/COLDefence/DefenceController.cpp" />
-        <option value="$PROJECT_DIR$/Source/COLDefence/WeaponBase.h" />
         <option value="$PROJECT_DIR$/Source/COLDefence/WeaponBase.cpp" />
         <option value="$PROJECT_DIR$/Source/COLDefence/COLDefenceInstance.cpp" />
         <option value="$PROJECT_DIR$/Source/COLDefence/Types.h" />
@@ -110,6 +93,7 @@
         <option value="$PROJECT_DIR$/Source/COLDefence/NukeBase.h" />
         <option value="$PROJECT_DIR$/Source/COLDefence/ProjectileBase.h" />
         <option value="$PROJECT_DIR$/Source/COLDefence/WaveManagerBase.h" />
+        <option value="$PROJECT_DIR$/Source/COLDefence/WeaponBase.h" />
       </list>
     </option>
   </component>
@@ -555,7 +539,7 @@
       <workItem from="1627136516272" duration="21004000" />
       <workItem from="1627228627318" duration="7059000" />
       <workItem from="1627323613316" duration="3297000" />
-      <workItem from="1627438696224" duration="11627000" />
+      <workItem from="1627438696224" duration="12575000" />
     </task>
     <servers />
   </component>
@@ -568,22 +552,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2455" height="294" key="GridCell.Tab.0.bottom" timestamp="1627269639371">
+    <state width="2143" height="258" key="GridCell.Tab.0.bottom" timestamp="1627451947667">
       <screen x="0" y="0" width="2498" height="1080" />
     </state>
-    <state width="2455" height="294" key="GridCell.Tab.0.bottom/0.0.2498.1080/-1920.-364.1920.1040@0.0.2498.1080" timestamp="1627269639371" />
-    <state width="2455" height="294" key="GridCell.Tab.0.center" timestamp="1627269639371">
+    <state width="2143" height="258" key="GridCell.Tab.0.bottom/0.0.2498.1080/-1920.-364.1920.1040@0.0.2498.1080" timestamp="1627451947667" />
+    <state width="2143" height="258" key="GridCell.Tab.0.center" timestamp="1627451947666">
       <screen x="0" y="0" width="2498" height="1080" />
     </state>
-    <state width="2455" height="294" key="GridCell.Tab.0.center/0.0.2498.1080/-1920.-364.1920.1040@0.0.2498.1080" timestamp="1627269639371" />
-    <state width="2455" height="294" key="GridCell.Tab.0.left" timestamp="1627269639371">
+    <state width="2143" height="258" key="GridCell.Tab.0.center/0.0.2498.1080/-1920.-364.1920.1040@0.0.2498.1080" timestamp="1627451947666" />
+    <state width="2143" height="258" key="GridCell.Tab.0.left" timestamp="1627451947666">
       <screen x="0" y="0" width="2498" height="1080" />
     </state>
-    <state width="2455" height="294" key="GridCell.Tab.0.left/0.0.2498.1080/-1920.-364.1920.1040@0.0.2498.1080" timestamp="1627269639371" />
-    <state width="2455" height="294" key="GridCell.Tab.0.right" timestamp="1627269639371">
+    <state width="2143" height="258" key="GridCell.Tab.0.left/0.0.2498.1080/-1920.-364.1920.1040@0.0.2498.1080" timestamp="1627451947666" />
+    <state width="2143" height="258" key="GridCell.Tab.0.right" timestamp="1627451947667">
       <screen x="0" y="0" width="2498" height="1080" />
     </state>
-    <state width="2455" height="294" key="GridCell.Tab.0.right/0.0.2498.1080/-1920.-364.1920.1040@0.0.2498.1080" timestamp="1627269639371" />
+    <state width="2143" height="258" key="GridCell.Tab.0.right/0.0.2498.1080/-1920.-364.1920.1040@0.0.2498.1080" timestamp="1627451947667" />
     <state width="2455" height="391" key="GridCell.Tab.1.bottom" timestamp="1627008422455">
       <screen x="0" y="0" width="2498" height="1080" />
     </state>
