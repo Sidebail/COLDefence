@@ -7,8 +7,8 @@
 #include "GASComponent.generated.h"
 
 /**
- * 
- */
+* @note VLAD: Deprecated. Trash code. Sorry...
+*/
 UCLASS()
 class COLDEFENCE_API UGASComponent : public UAbilitySystemComponent
 {

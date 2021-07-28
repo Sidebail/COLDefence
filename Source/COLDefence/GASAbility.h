@@ -7,8 +7,8 @@
 #include "GASAbility.generated.h"
 
 /**
- * 
- */
+* @note VLAD: Deprecated. Trash code. Sorry...
+*/
 UCLASS()
 class COLDEFENCE_API UGASAbility : public UGameplayAbility
 {

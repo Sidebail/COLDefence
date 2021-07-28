@@ -112,11 +112,7 @@ void AGeneralCharacter::Tick(float DeltaTime)
 	}
 }
 
-/**
-* @brief This function cares about the locomotion and rotation, regarding player input
-* @param DeltaTime 
-* 
-*/
+
 void AGeneralCharacter::MovementTick(float DeltaTime)
 {
 	if(!bPlayerIsDead)
@@ -171,7 +167,7 @@ void AGeneralCharacter::InitializeAttributes()
 
 bool AGeneralCharacter::SpawnDefence()
 {
-	
+	// Checks if there is a place to spawn the Defence. In range of building.
 	FHitResult HitResult;
 	GetWorld()->LineTraceSingleByChannel(HitResult, FirstPersonCameraComponent->GetComponentLocation(),
             FirstPersonCameraComponent->GetComponentLocation() + FirstPersonCameraComponent->GetForwardVector() * PlayerStats.MaxBuildRange,
@@ -183,6 +179,7 @@ bool AGeneralCharacter::SpawnDefence()
 		SpawnParameters.Instigator = GetInstigator();
 		SpawnParameters.Owner = GetOwner();
 		FVector SpawnLocation = HitResult.Location;
+		// TODO: Set the height of where to spawn the Pod.
 		SpawnLocation.Z = SpawnLocation.Z + 3000;
 		FRotator SpawnRotation = FirstPersonCameraComponent->GetComponentRotation();
 		SpawnRotation.Pitch = 0;
@@ -194,6 +191,7 @@ bool AGeneralCharacter::SpawnDefence()
 			bCanCallDefenceHere = false;
 			Pod->InitializeDefence(CurrentDefenceClass, (CurrentDefenceData.Type == EDefenceType::SOLDIER)?true:false);
 			FTimerHandle DelayHandle;
+			// TODO: Set delay timer time to be taken from DataTable
 			GetWorldTimerManager().SetTimer(DelayHandle, this, &AGeneralCharacter::LetDecalMove, Pod->SpawnDelay + 1, false);
 			return true;
 		}
@@ -246,6 +244,7 @@ void AGeneralCharacter::InputLookAxisY(float Value)
 }
 void AGeneralCharacter::TogglePhone()
 {
+	// Plays with visibilities 
 	bIsPhoneEquipped = !bIsPhoneEquipped;
 	if(bIsPhoneEquipped)
 	{
@@ -270,6 +269,7 @@ void AGeneralCharacter::InitWeapon(FName WeaponDataRowName)
 	}
 
 	FWeaponStats WeaponStats;
+	// Creates Weapon actor
 	if(myGI->GetWeaponStats(WeaponDataRowName, WeaponStats))
 	{
 		// Weapon is found, let's spawn it in!

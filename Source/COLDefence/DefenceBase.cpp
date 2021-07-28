@@ -54,6 +54,7 @@ void ADefenceBase::FireTick(float DeltaTime)
 
 void ADefenceBase::Initialize()
 {
+	// Initializing Ability, based on ShootingAbility that is set from blueprint.
 	if(AbilitySystemComponent && HasAuthority())
 	{
 		if(ShootingAbility)
@@ -62,7 +63,6 @@ void ADefenceBase::Initialize()
 			AbilitySystemComponent->InitAbilityActorInfo(this, this);
 		}
 	}
-	
 	UCOLDefenceInstance* myGI = Cast<UCOLDefenceInstance>(GetGameInstance());
 	if(myGI)
 	{
@@ -112,7 +112,6 @@ bool ADefenceBase::LookAtTarget(AActor* TargetToLookAt, float DeltaTime)
 	if(TargetToLookAt)
 	{
 		FRotator CurrentRotation = RotatingPart->GetComponentRotation();
-
 		FVector TargetLocation = TargetToLookAt->GetActorLocation() + TargetToLookAt->GetActorForwardVector() * 20;
 		FRotator TargetRotation = UKismetMathLibrary::FindLookAtRotation(RotatingPart->GetComponentLocation(), TargetLocation );
 		RotatingPart->SetWorldRotation(UKismetMathLibrary::RInterpTo(CurrentRotation, TargetRotation, DeltaTime, DefenceData.ReactionLerpSpeed));

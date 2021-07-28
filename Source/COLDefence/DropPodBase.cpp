@@ -45,7 +45,6 @@ void ADropPodBase::Tick(float DeltaTime)
 void ADropPodBase::PodMeshHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	FVector NormalImpulse, const FHitResult& Hit)
 {
-	UE_LOG(LogTemp, Warning, TEXT("PIZDEC"));
 	if(!bSpawned)
 	{
 		StaticMesh->SetEnableGravity(false);
@@ -99,9 +98,10 @@ void ADropPodBase::SpawnDefence()
 		GetWorld()->SpawnActor(DefenceClassToSpawn, &SpawnLocation, &SpawnRotation, SpawnParameters);
 	}
 
+	// Plays Particle
 	if(SpawnEffect->Template)
 		SpawnEffect->Activate();
-	
+	// Allows the drop-pod to fall through ground.
 	StaticMesh->SetEnableGravity(true);
 	StaticMesh->SetMassScale(NAME_None, GravityScale/3);
 	StaticMesh->SetSimulatePhysics(true);

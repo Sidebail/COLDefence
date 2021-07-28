@@ -17,7 +17,7 @@
 	GAMEPLAYATTRIBUTE_VALUE_INITTER(PropertyName)
 
 /**
- * 
+ * @note VLAD: Deprecated. Trash code. Sorry...
  */
 UCLASS()
 class COLDEFENCE_API UGASAttribute : public UAttributeSet
